@@ -1,0 +1,14 @@
+Line Number,Text,Sentiment,POS,NEU,NEG
+1,"Speaker A: Hey, um, how was your weekend?",NEU,0.052,0.945,0
+2,Speaker B: Long time no see mate. I'm so happy to see you after your accident.,POS,0.988,0.01,0
+3,"Speaker A: Yeah, um, it was terrible, I broke 7 ribs and, yeah, spent half a year in the hospital",NEG,0.003,0.018,1
+4,Speaker B: Oh my god! I'm so sorry to hear that.,NEG,0.01,0.093,1
+5,"Speaker A: Ah, that's alright. You see, uh, I'm getting better now. Um, How about you?",POS,0.952,0.046,0
+6,"Speaker B: I'm really mad now, like, my son just got suspended for fighting with other kids!",NEG,0.003,0.019,1
+7,"Speaker A: Suspended, really?",NEG,0.005,0.44,1
+8,"Speaker B: Haha, um, yeah, the school just called me and, um, he also broke two windows",NEG,0.005,0.095,1
+9,Speaker A: What? Broke two windows.,NEG,0.005,0.161,1
+10,"Speaker B: Haha, um, I know, it was, like, horrified to know.",NEU,0.069,0.497,0
+11,"Speaker A: Yeah, I understand, uh, it must have been tough for you.",NEU,0.071,0.812,0
+12,"Speaker B: Thanks man, love to see you again, I will, um, see you at work soon.",POS,0.993,0.005,0
+13,"Speaker A: No worry, mate. Hope we can, um, hang out again soon, my son really misses playing football with you.",POS,0.988,0.01,0
