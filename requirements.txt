@@ -1,0 +1,7 @@
+torch
+transformers
+pysentimiento
+pandas
+matplotlib
+tabulate
+streamlit

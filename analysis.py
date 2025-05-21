@@ -21,7 +21,7 @@ def compute_filler_ratio(text_lines):
         data.append({
             "Line Number": num,
             "Context": line,
-            "Filler Ratio": round(ratio, 3)
+            "Filler Ratio": round(ratio, 5)
         })
 
     df =  pd.DataFrame(data)
@@ -42,9 +42,9 @@ def compute_sentiment(text):
             "Line Number": num,
             "Text": line,
             "Sentiment": result.output,
-            "POS": round(probas.get("POS", 0),3),
-            "NEU": round(probas.get("NEU", 0),3),
-            "NEG": round(probas.get("NEG", 0),),
+            "POS": round(probas.get("POS", 0),5),
+            "NEU": round(probas.get("NEU", 0),5),
+            "NEG": round(probas.get("NEG", 0),5),
         })
 
     df = pd.DataFrame(data)
@@ -62,13 +62,13 @@ def compute_emotions(text):
             "Line Number": num,
             "Text": line,
             "Overall Emotions": result.output,
-            "Mixed": round(result.probas.get("others", 0),3),
-            "Joy": round(result.probas.get("joy", 0),3),
-            "Sadness": round(result.probas.get("sadness", 0),),
-            "Anger": round(result.probas.get("anger", 0), 3),
-            "Surprise": round(result.probas.get("surprise", 0), 3),
-            "Disgust": round(result.probas.get("disgust", 0), ),
-            "Fear": round(result.probas.get("fear", 0), )}
+            "Mixed": round(result.probas.get("others", 0),5),
+            "Joy": round(result.probas.get("joy", 0),5),
+            "Sadness": round(result.probas.get("sadness", 0),5),
+            "Anger": round(result.probas.get("anger", 0), 5),
+            "Surprise": round(result.probas.get("surprise", 0), 5),
+            "Disgust": round(result.probas.get("disgust", 0), 5),
+            "Fear": round(result.probas.get("fear", 0), 5)}
         )
 
     df = pd.DataFrame(data)
