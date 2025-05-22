@@ -18,7 +18,7 @@ def compute_filler_ratio(text_lines):
     data = []
 
     for num, line in enumerate(text_lines, 1):
-        words = re.findall(r"\b\w+\b", line.lower())  # Lowercase for matching
+        words = re.findall(r"\b\w+\b", line.lower())
         total_words = len(words)
         filler_count = sum(1 for word in words if word in filler_words)
         ratio = filler_count / total_words if total_words > 0 else 0
