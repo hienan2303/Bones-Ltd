@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 #Filler Ratio Section
-df_filler = pd.read_csv("compute_filler_ratio.csv")
+df_filler = pd.read_csv("SampleOutput/compute_filler_ratio.csv")
 st.title("Filler Ratios Dashboard")
 
 st.subheader("Transcript with Filler Ratios")
@@ -17,7 +17,7 @@ st.subheader("Filler Ratio Chart")
 st.line_chart(df_filler.set_index(df_filler.columns[0])[df_filler.columns[-1]])
 
 #Sentiment Section
-df_sentiment = pd.read_csv("compute_sentiment.csv")
+df_sentiment = pd.read_csv("SampleOutput/compute_sentiment.csv")
 st.title("Sentiment Dashboard")
 
 st.subheader("Transcript with Sentiment")

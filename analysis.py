@@ -2,6 +2,10 @@ from pysentimiento import create_analyzer
 import re
 import pandas as pd
 from tabulate import tabulate
+import os
+
+output_dir = "SampleOutput"
+os.makedirs(output_dir, exist_ok=True)
 
 def read_transcript(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
@@ -10,7 +14,7 @@ def read_transcript(file_path):
 
 #Filter ratio
 def compute_filler_ratio(text_lines):
-    filler_words = {"um", "uh", "like", "you know","ah","yeah"}
+    filler_words = {"um", "uh", "like","ah","yeah"}
     data = []
 
     for num, line in enumerate(text_lines, 1):
@@ -25,7 +29,8 @@ def compute_filler_ratio(text_lines):
         })
 
     df =  pd.DataFrame(data)
-    df.to_csv("compute_filler_ratio.csv", index=False)
+    output_path = os.path.join(output_dir, "compute_filler_ratio.csv")
+    df.to_csv(output_path, index=False)
     return df
 
 
@@ -36,7 +41,7 @@ def compute_sentiment(text):
 
     for num, line in enumerate(text, 1):
         result = analyzer.predict(line)
-        probas = result.probas  # This is a dict with keys 'POS', 'NEU', 'NEG'
+        probas = result.probas
 
         data.append({
             "Line Number": num,
@@ -48,7 +53,8 @@ def compute_sentiment(text):
         })
 
     df = pd.DataFrame(data)
-    df.to_csv("compute_sentiment.csv", index=False)
+    output_path = os.path.join(output_dir, "compute_sentiment.csv")
+    df.to_csv(output_path, index=False)
     return df
 
 #Bonus metric: emotions analysis
@@ -72,7 +78,8 @@ def compute_emotions(text):
         )
 
     df = pd.DataFrame(data)
-    df.to_csv("compute_emotion.csv", index=False)
+    output_path = os.path.join(output_dir, "compute_emotion.csv")
+    df.to_csv(output_path, index=False)
     return df
 
 #Parsing & Loading
