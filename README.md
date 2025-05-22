@@ -15,13 +15,13 @@
 ## 📂 Set up and run instruction
 - Download Bones-ltd zip file and extract.
 - Use **cd Bones-Ltd-main** to change directories.
-- To run the analysis, installing all required libraries, run: **python3 analysis.py** on terminal
-- To launch the interactive dashboard, run **python -m streamlit run app.py** on terminal
+- To run the analysis, installing all required libraries, run: **python3 analysis.py** on terminal.
+- To launch the interactive dashboard, run **python -m streamlit run app.py** on terminal.
 
 ## 🎯 Sample Output
 - Sample output files for Sentiment Analysis and Filler Word Ratio are provided in the **Sample Output folder**.
 - Running the application will regenerate these files automatically based on the given **transcript file**.
-- Dashboard HTML Sample Output is accessible via **https://bones-limited.streamlit.app/**
+- Dashboard HTML Sample Output is accessible via **https://bones-limited.streamlit.app/**.
 
 ## 📈 Description of each metrics
 ### 1. Sentiment analysis
@@ -61,6 +61,6 @@
 - 🥧 Percentage of all sentiments relative(POS, NEU, NEG) to total lines of alternating speaker.
 
 ## ⚪⚪⚪ In one extra hour I would add…
-- 🎯 Create more versatite conversations to improve testing
+- 🎯 Create more versatite conversations to improve testing.
 - 🗃️ Enable transcript upload, allowing users to drag-and-drop their own transcripts for instant analysis. 
-- 🔍 Analyze sentiment and filler use by conversation topic or phase (e.g., intro, feedback, wrap-up)
+- 🔍 Analyze sentiment and filler use by conversation topic or phase (e.g., intro, feedback, wrap-up).
