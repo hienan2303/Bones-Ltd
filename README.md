@@ -21,6 +21,7 @@
 ## 🎯 Sample Output
 - Sample output files for Sentiment Analysis and Filler Word Ratio are provided in the **Sample Output folder**.
 - Running the application will regenerate these files automatically based on the given **transcript file**.
+- Dashboard HTML Sample Output is accessible via **https://bones-limited.streamlit.app/**
 
 ## 📈 Description of each metrics
 ### 1. Sentiment analysis
@@ -63,6 +64,3 @@
 - 🎯 Create more versatite conversations to improve testing
 - 🗃️ Enable transcript upload, allowing users to drag-and-drop their own transcripts for instant analysis. 
 - 🔍 Analyze sentiment and filler use by conversation topic or phase (e.g., intro, feedback, wrap-up)
-
-## 📊 Sample Output
-Dashboard HTML Sample Output: https://bones-limited.streamlit.app/
