@@ -18,6 +18,10 @@
 - To run the analysis, installing all required libraries, run: **python3 analysis.py** on terminal
 - To launch the interactive dashboard, run **python -m streamlit run app.py** on terminal
 
+## 🎯 Sample Output
+- Sample output files for Sentiment Analysis and Filler Word Ratio are provided in the **Sample Output folder**.
+- Running the application will regenerate these files automatically based on the given **transcript file**.
+
 ## 📈 Description of each metrics
 ### 1. Sentiment analysis
 - 💬 Text: The original line of dialogue or message.
